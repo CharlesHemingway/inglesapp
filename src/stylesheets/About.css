@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+.background {
+  /*background: url("../images/about.jpg") no-repeat center fixed;*/
+  text-align: center;
+  padding-top: 5%;
+}
+
+.about-logo {
+
+  width: 10%;
+  height: 10%;
+}
+
+.about-text {
+  font-family: "Roboto";
+  font-size: 1.3em;
+  text-align: justify;
+}
+
+.back-btn {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  border-left: 5px solid indigo;
+  border-top: 5px solid indigo;
+  transform: rotateZ(-45deg);
+  left: 50px;
+  top: 40px;
+  cursor: pointer;
+}
+footer {
+  padding: 2em;
+}
+.container a {
+  color: indigo;
+}
+.container a:hover {
+  color: blueviolet;
+}
+
+@media only screen and (max-width: 600px) {
+  .back-btn {
+    width: 20px;
+    height: 20px;
+    left: 15px;
+    top: 15px;
+  }
+}

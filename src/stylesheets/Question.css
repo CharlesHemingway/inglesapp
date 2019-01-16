@@ -1,0 +1,21 @@
+.question {
+  padding: 0px 30px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+}
+.question h4 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .question {
+    width: 100%;
+  }
+  .question h4 {
+    font-size: 1.1em;
+  }
+}

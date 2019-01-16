@@ -1,0 +1,39 @@
+input[type="radio"] {
+  position: absolute;
+  z-index: 2;
+  height: 25px;
+  cursor: pointer;
+  opacity: 0;
+  margin-top: -1px;
+  width: 500px;
+}
+[type="radio"]:not(:checked) {
+  left: 0px;
+}
+.option-val {
+  background: white;
+  color: black;
+  padding: 6px 15px;
+  border-radius: 10px;
+  max-width: 500px;
+  word-wrap: wrap;
+  font-weight: bold;
+  /*box-shadow: 2px 2px 8px -2px black;*/
+  border: 1px solid #aaa;
+}
+.option {
+  z-index: 1;
+  margin-bottom: 10px;
+}
+@keyframes select {
+  to {
+    background: #383;
+    color: #eee;
+  }
+}
+input[type="radio"]:checked ~ .option-val {
+  animation: select 0.5s forwards ease;
+}
+input[type="radio"]:checked ~ .option-val::before {
+  content: "✅ ";
+}
